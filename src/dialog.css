@@ -1,0 +1,120 @@
+/* Required styles */
+
+/* use js to centerize the dialog to support some 2.3 devices*/
+.dialog {
+    display: none;
+    background: #FFF;
+    border-radius: 8px;
+    color: #4D4D4D;
+    left: 50%;
+    margin-top: -25px;
+    max-width: 83%;
+    padding: 8px;
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    top: 50%;
+    width: 300px;
+    z-index: 10;
+}
+
+.dialog .bd {
+    padding: 18px 14px;
+    text-align: center;
+}
+
+.dialog .bd+.ft {
+    border-top: 1px solid #DBDBDB;
+}
+
+.dialog .ft {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 6px;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+.dialog-cancel,
+.dialog-confirm {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    display: block;
+}
+
+.dialog.dialog-type-alert .dialog-cancel {
+    display: none;
+}
+
+.dialog.dialog-type-confirm .dialog-cancel:before {
+    position: absolute;
+    right: 0;
+    content: '';
+    display: block;
+    border-right: 1px solid #DBDBDB;
+    top: -6px;
+    bottom: -8px;
+}
+
+.dialog.dialog-type-confirm .dialog-cancel,
+.dialog.dialog-type-confirm .dialog-confirm {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.dialog-mask {
+    display: none;
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .78);
+}
+
+.dialog-type-toast {
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    min-width: 108px;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .88);
+    border-radius: 15px;
+    color: white;
+    -webkit-animation: fadeOut 4s ease 0s 1;
+            animation: fadeOut 4s ease 0s 1;
+    opacity: 0;
+    top: 85%;
+}
+
+ @-webkit-keyframes fadeOut {
+ 0% {
+ opacity: 1;
+ filter: alpha(opacity=100);
+ }
+
+ 100% {
+ opacity: 0;
+ filter: alpha(opacity=0);
+ }
+ }
+
+ @keyframes fadeOut {
+ 0% {
+ opacity: 1;
+ filter: alpha(opacity=100);
+ }
+
+ 100% {
+ opacity: 0;
+ filter: alpha(opacity=0);
+ }
+ }
