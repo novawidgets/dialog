@@ -1,3 +1,3 @@
-# Dialog 组件
+# <nova-dialog> 组件
 
-dialog组件，详细文档： http://75team.github.io/novaUI/detail.html?doc=dialog
+详细文档： http://75team.github.io/novaUI/detail.html?doc=nova-dialog
